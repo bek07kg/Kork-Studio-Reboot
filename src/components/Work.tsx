@@ -565,6 +565,25 @@ const projects: Project[] = [
     ],
     link: "#",
   },
+  {
+    id: 29,
+    title: "",
+    category: "Экстерьеры",
+    image:
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_1v.webp",
+    images: [
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_1v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_2v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_3v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_4v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_5v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_6v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_7v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_8v.webp",
+      "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/Rend_9v.webp",
+    ],
+    link: "#",
+  },
 ];
 
 const Work = () => {

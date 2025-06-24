@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,18 +25,18 @@ const Footer = () => {
               <ul className="space-y-2 text-white/70">
                 <li>
                   <a
-                    href="mailto:hello@kork.studio"
+                    href="mailto:ernazbekjar@gmail.com"
                     className="hover:text-white transition-colors duration-300"
                   >
-                    hello@kork.studio
+                    ernazbekjar@gmail.com
                   </a>
                 </li>
                 <li>
                   <a
-                    href="tel:+12345678900"
+                    href="tel:+996995271515"
                     className="hover:text-white transition-colors duration-300"
                   >
-                    +1 (234) 567-8900
+                    +996 (995) 27-15-15
                   </a>
                 </li>
               </ul>
@@ -48,25 +48,31 @@ const Footer = () => {
               </h3>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/kork_studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors duration-300"
                   aria-label="Instagram"
                 >
-                  <Instagram size={20} />
+                  <Instagram size={28} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/kork_studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition-colors duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={28} />
+                </a>
+                <a
+                  href="https://twitter.com/kork_studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors duration-300"
                   aria-label="Twitter"
                 >
-                  <Twitter size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="text-white/70 hover:text-white transition-colors duration-300"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={20} />
+                  <Twitter size={28} />
                 </a>
               </div>
             </div>
