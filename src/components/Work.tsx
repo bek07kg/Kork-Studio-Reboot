@@ -24,7 +24,8 @@ const projects: Project[] = [
     id: 1,
     title: "",
     category: "Концепции",
-    image: "/images/REND_1.webp",
+    image:
+      "https://raw.githubusercontent.com/bek07kg/project_images/main/REND_1.webp",
     link: "#",
     images: [
       "https://raw.githubusercontent.com/bek07kg/project_images/main/REND_1.webp",
