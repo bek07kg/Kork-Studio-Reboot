@@ -32,8 +32,13 @@ const Header = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-white text-xl font-medium tracking-tight">
-            KORK STUDIO
+          {/* Логотип вместо текста */}
+          <a href="#">
+            <img
+              src="/images/Logo.png" // путь к твоему логотипу
+              alt="KORK Studio Logo"
+              className="h-14 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
