@@ -34,12 +34,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Логотип вместо текста */}
           <a href="#">
-            <img
-              src="/images/Logo.png" // путь к твоему логотипу
-              alt="KORK Studio Logo"
-              className="h-14 w-auto"
-            />
-          </a>
+  <img
+    src="/images/Logo.png"
+    alt="KORK Studio Logo"
+    className="h-14 w-auto ml-12 mt-8" // ml-4 → сдвиг вправо, mt-2 → сдвиг вниз
+  />
+</a>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
@@ -65,7 +66,7 @@ const Header = () => {
           >
             <Menu size={24} />
           </button>
-        </div>
+        </div>  
       </div>
 
       {/* Mobile Navigation Overlay */}
