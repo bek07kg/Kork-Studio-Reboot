@@ -582,6 +582,13 @@ const projects: Project[] = [
     ],
     link: "#",
   },
+  {
+    id: 30,
+    title: "Клубный дом Gracia",
+    category: "360 Панорамы",
+    image: "https://raw.githubusercontent.com/bek07kg/project_images/refs/heads/main/p1%20(1).webp", // миниатюра
+    link: "https://clubhousegracia.netlify.app/", // ссылка на 360 панораму
+  },
 ];
 
 const Work = () => {
@@ -634,8 +641,15 @@ const Work = () => {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              onClick={() => setSelectedProject(project)}
               className="cursor-pointer group relative"
+              onClick={() => {
+                if (project.category === "360 Панорамы") {
+                  window.open(project.link, "_blank");
+                } else {
+                  setSelectedProject(project);
+                  setPreviewIndex(null);
+                }
+              }}
             >
               <div className="overflow-hidden shadow-md h-[400px]">
                 <img
@@ -655,7 +669,7 @@ const Work = () => {
         </div>
       </div>
 
-      {/* Модальное окно со всеми изображениями */}
+      {/* Модальное окно без индикатора */}
       {selectedProject?.images && previewIndex === null && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 overflow-y-auto p-4">
           <div className="fixed top-4 right-4 z-50">
@@ -686,7 +700,7 @@ const Work = () => {
         </div>
       )}
 
-      {/* Полноэкранный просмотр с переключением */}
+      {/* Полноэкранный просмотр с переключением (без индикатора) */}
       {selectedProject?.images && previewIndex !== null && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-95 flex items-center justify-center">
           <button
